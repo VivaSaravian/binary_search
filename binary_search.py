@@ -24,6 +24,5 @@ while True:
     except:
         break
 
-print(binary_search(arr, 6))
 
 

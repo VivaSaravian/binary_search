@@ -1,7 +1,7 @@
 def binary_search(arr, target):
-    mid = len(a) // 2
+    mid = len(arr) // 2
     low = 0
-    high = len(a) - 1
+    high = len(arr) - 1
     while low <= high and arr[mid] != target:
         if target > arr[mid]:
             low = mid + 1
@@ -14,4 +14,16 @@ def binary_search(arr, target):
         return None
 
 
-a = [1,2,3,4,5,6,7,8,9,10]
+arr = []
+arr.sort()
+while True:
+    try:
+        n = int(input())
+        if n:
+            arr.append(n)
+    except:
+        break
+
+print(binary_search(arr, 6))
+
+
